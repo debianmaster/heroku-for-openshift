@@ -15,4 +15,7 @@ machine gogs.127.0.0.1.nip.io
   password c0mputer
   login admin5
 ```
+<<<<<<< HEAD
 
+=======
+>>>>>>> 03623e8d01226b607b888995181ae9f140a1d4b6
