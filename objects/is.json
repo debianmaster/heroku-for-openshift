@@ -1,0 +1,39 @@
+{
+  "kind": "ImageStream",
+  "apiVersion": "v1",
+  "metadata": {
+    "name": "golang",
+    "creationTimestamp": null,
+    "labels": {
+      "build": "go-welcome"
+    },
+    "annotations": {
+      "openshift.io/generated-by": "OpenShiftNewBuild"
+    }
+  },
+  "spec": {
+    "lookupPolicy": {
+      "local": false
+    },
+    "tags": [
+      {
+        "name": "latest",
+        "annotations": {
+          "openshift.io/imported-from": "golang:latest"
+        },
+        "from": {
+          "kind": "DockerImage",
+          "name": "golang:latest"
+        },
+        "generation": null,
+        "importPolicy": {},
+        "referencePolicy": {
+          "type": ""
+        }
+      }
+    ]
+  },
+  "status": {
+    "dockerImageRepository": ""
+  }
+}
