@@ -13,6 +13,7 @@
     "commander": "^2.11.0",
     "gogs-client": "^0.5.2",
     "kubernetes-client": "^3.16.0",
+    "netrc": "^0.1.4",
     "openshift-client": "^3.10.8",
     "simple-git": "^1.79.0"
   }

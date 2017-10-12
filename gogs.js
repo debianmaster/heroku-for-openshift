@@ -1,21 +1,26 @@
 var GogsClient = require('gogs-client');
 var api = new GogsClient('http://gogs.127.0.0.1.nip.io/api/v1');
-/*
+var netrc = require('netrc');
+var myNetrc = netrc();
+console.log(myNetrc);
+myNetrc['gogs.127.0.0.1.nip.io']={login:'chakri',password:'asdfsaf'};
+netrc.save(myNetrc);
+
+
+
 api.createUser({
     "username": "admin5",
     "password": "c0mputer",
     "full_name": "Demo User",
     "email": "admin5@gmail.com"
-  }, {
-    "username": "admin2",
-    "password": "c0mputer"
-  },false).then(function(user) {
+  },null,false).then(function(user) {
    console.log(user);
 }).catch(function(err){
    console.log(err);
 });
-*/
+
 //const kApi = require('kubernetes-client');
+/*
 const OpenShiftClient = require('openshift-client');
 const oapi = new OpenShiftClient.OApi({
   url: 'https://127.0.0.1:8443',
@@ -31,6 +36,7 @@ simpleGit.init(null,function(){
         console.log(err,res);
     });
 });
+*/
 
 //oapi.ns('myproject').deploymentconfigs.post({ body: manifest0 },function(err){ console.log(err) });
 
