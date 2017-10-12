@@ -6,15 +6,9 @@
     "creationTimestamp": null,
     "labels": {
       "build": "go-welcome"
-    },
-    "annotations": {
-      "openshift.io/generated-by": "OpenShiftNewBuild"
     }
   },
   "spec": {
-    "lookupPolicy": {
-      "local": false
-    },
     "tags": [
       {
         "name": "latest",

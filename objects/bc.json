@@ -3,36 +3,11 @@
   "apiVersion": "v1",
   "metadata": {
     "name": "go-welcome",
-    "creationTimestamp": null,
     "labels": {
       "build": "go-welcome"
-    },
-    "annotations": {
-      "openshift.io/generated-by": "OpenShiftNewBuild"
     }
   },
   "spec": {
-    "triggers": [
-      {
-        "type": "GitHub",
-        "github": {
-          "secret": "euOUU7VIj78hLkWhI8NO"
-        }
-      },
-      {
-        "type": "Generic",
-        "generic": {
-          "secret": "Agukv0pwH-kPRcPOiZez"
-        }
-      },
-      {
-        "type": "ConfigChange"
-      },
-      {
-        "type": "ImageChange",
-        "imageChange": {}
-      }
-    ],
     "source": {
       "type": "Git",
       "git": {

@@ -11,10 +11,13 @@
   "dependencies": {
     "caporal": "^0.7.0",
     "commander": "^2.11.0",
+    "commander-plus": "0.0.6",
     "gogs-client": "^0.5.2",
+    "inquirer-command-prompt": "0.0.6",
     "kubernetes-client": "^3.16.0",
     "netrc": "^0.1.4",
     "openshift-client": "^3.10.8",
+    "prompt": "^1.0.0",
     "simple-git": "^1.79.0"
   }
 }
